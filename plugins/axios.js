@@ -2,6 +2,7 @@
  * 扩展axios
  */
 export default function({ $axios, redirect }){
+  debugger;
     $axios.onRequest(config => {
         console.log('Making request to ' + config)
         console.log(config)

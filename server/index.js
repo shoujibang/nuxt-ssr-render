@@ -7,7 +7,7 @@ const consola = require('consola')
 const { Nuxt, Builder } = require('nuxt')
 const app = express()
 
-app.use(cookieParser()); //应用cookie中间件
+app.use(cookieParser('bang')); //应用cookie中间件
 app.use(bodyParser.json());//boday中间件
 // JWT middleware
 // app.use(

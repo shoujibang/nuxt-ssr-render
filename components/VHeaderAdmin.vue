@@ -37,8 +37,14 @@
             
         </el-row>
         <div class="nav-box-right">
-            <n-link to="/user/login">登录</n-link>
-            <n-link to="/user/regiset">注册</n-link>
+            <div v-if="userName.length > 0">
+                {{userName}}
+                <span @click="exitFn">退出</span>
+            </div>
+            <div v-else>
+                <n-link to="/user/login">登录</n-link>
+                <n-link to="/user/regiset">注册</n-link>
+            </div>
         </div>
         <slot></slot>
     </div> 
@@ -52,6 +58,7 @@ export default {
     data() {
         return {
             isMenu:false,
+            userName:"",
             navData:[
                 {
                     name:"首页",
@@ -143,13 +150,19 @@ export default {
                 
             ]
         }
+        
     },
     mounted() {
-
-        console.log(this);
+        debugger;
+        this.userName = this.$getCookie("username")
+        
         
     },
     methods: {
+        exitFn(){
+            this.$delCookie('username');
+            this.$router.push("/")
+        },
         pushRoute(e,url){
             if(!url) return;
             var reg =  /^((http|https|ftp):\/\/)?(\w(\:\w)?@)?([0-9a-z_-]+\.)*?([a-z0-9-]+\.[a-z]{2,6}(\.[a-z]{2})?(\:[0-9]{2,6})?)((\/[^?#<>\/\\*":]*)+(\?[^#]*)?(#.*)?)?$/i
@@ -209,6 +222,9 @@ export default {
         font-size: 14px;
         position: absolute;
         right: 45px;
+        span{
+            cursor: pointer;
+        }
     }
    .header-box .nav-box ul{
        display:flex;

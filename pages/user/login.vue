@@ -85,10 +85,12 @@ export default {
               password:that.loginForm.pass
             }).then(res =>{
               console.log(res)
-              if(!res && res.status !== 200){
-                alert("用户名密码错误")
-                }
-                this.$router.push('/admin');
+              if(res.data.token === null){                
+                this.$alert("您的用户名或密码错误")
+                return false;
+              }
+              
+              this.$router.push('/admin');
                  
             })
             // alert(this.loginForm.name);
@@ -128,7 +130,7 @@ export default {
     left: 50%;
     top: 50%;
     width: 700px;
-    height: 360px;
+    height: 560px;
     
     border-radius: 13px;
     background: #fff;

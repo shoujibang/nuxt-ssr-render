@@ -6,8 +6,15 @@ import Cookie from '@/assets/util/cookie' //cookie处理
 import Dates from '@/assets/util/date' //扩展对日期的处理
 import Storage from '@/assets/util/storage' //扩展LOCALSTORAGE处理
 import UrlQuery from '@/assets/util/urlQuery' //扩展对urlquery的处理
+import echarts from 'echarts' //引入echarts
 
 
+/**
+ * 引入echarts
+ * this.$echarts
+ */
+
+Vue.prototype.$echarts = echarts;
 /**
  * 扩展对urlquery的处理
  */
