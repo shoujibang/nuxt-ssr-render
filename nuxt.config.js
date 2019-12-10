@@ -76,7 +76,7 @@ module.exports = {
    '~/plugins/jquery', 
    { src: '~/plugins/util.js', ssr: false },//扩展全局方法
    '@/plugins/main',//扩展全局组件components
-   { src: '~/plugins/rem.js', ssr: false }, //px转rem方法
+  //  { src: '~/plugins/rem.js', ssr: false }, //px转rem方法
   ],
   /*
   ** Nuxt.js dev-modules
@@ -146,18 +146,18 @@ module.exports = {
     /**
        * 配置自动px转rem
        */
-      postcss:[
-        require('postcss-pxtorem')({
-          // "rootValue": 75,结果为：设计稿元素尺寸/75，比如元素宽750px,最终页面会换算成 10rem
-          rootValue: 100,//根元素的值10=>62.5%,rem换算：设计稿尺寸/跟元素(10)
-          propList: [
-            '*'
-          ]
-        }),
-        //自动为css选择器添加前缀
-        // require('autoprefixer')({
-        //   browsers: ['Android >= 4.0', 'iOS >= 7']
-        // })
-      ]
+      // postcss:[
+      //   require('postcss-pxtorem')({
+      //     // "rootValue": 75,结果为：设计稿元素尺寸/75，比如元素宽750px,最终页面会换算成 10rem
+      //     rootValue: 100,//根元素的值10=>62.5%,rem换算：设计稿尺寸/跟元素(10)
+      //     propList: [
+      //       '*'
+      //     ]
+      //   }),
+      //   //自动为css选择器添加前缀
+      //   // require('autoprefixer')({
+      //   //   browsers: ['Android >= 4.0', 'iOS >= 7']
+      //   // })
+      // ]
   }
 }

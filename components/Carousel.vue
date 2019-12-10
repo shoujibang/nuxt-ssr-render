@@ -104,14 +104,15 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+@import "@/assets/stylus/_reset.scss";
 .carousel-comp{
   position: relative;
   
 }
 
 .carousel-comp /deep/ .el-carousel__indicators {
-  bottom: 230px ;
-  height:4px ;
+  bottom: pxTorem(230px) ;
+  height:pxTorem(4px) ;
   z-index: 9999999999999;
 }
 .carousel-comp .el-carousel-item{
@@ -123,38 +124,38 @@ export default {
   align-items: center;
   justify-content: center;
   h3{
-    font-size:41px;
+    font-size:pxTorem(41px);
     color:rgba(255,255,255,1);
-    margin-bottom: 11px;
+    margin-bottom: pxTorem(11px);
   }
   p{
-    font-size:20px;
+    font-size:pxTorem(20px);
     font-weight:400;
     color:rgba(255,255,255,1);
-    margin-bottom: 22px;
+    margin-bottom: pxTorem(22px);
   }
   a{
-    width: 136px;
-    height: 39px;
+    width: pxTorem(136px);
+    height: pxTorem(39px);
     text-align: center;
-    line-height: 39px;
+    line-height: pxTorem(39px);
     display: inline-block;
-    border:1px solid rgba(255,255,255,1);
-    font-size:18px;
+    border:pxTorem(1px) solid rgba(255,255,255,1);
+    font-size:pxTorem(18px);
     color:rgba(255,255,255,1);
   }
 }
 .carousel-comp .banner-list{
   width: 100%;
-    height: 120px;
+    height: pxTorem(120px);
     background: rgba(17, 15, 56, 0.7);
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     left: 0;
     z-index: 2;    
     // color: $white-color;
     ul{
-      width: 1200px;
+      width: pxTorem(1200px);
       margin: 0 auto;
       display: flex;
       li{
@@ -162,10 +163,10 @@ export default {
         display: flex;
         flex-wrap: wrap;
         font-size:14px;
-        height: 120px;
-        padding:20px;
+        height: pxTorem(120px);
+        padding:pxTorem(20px);
         h2{
-          font-size: 20px;
+          font-size: pxTorem(20px);
         }
       }
       li:hover{

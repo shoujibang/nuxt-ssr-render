@@ -23,3 +23,16 @@ debugger;
     document.body.clientWidth || document.documentElement.clientWidth;
   html.style.fontSize = (clientWidth / oWidth) * prem + "px";
 }
+
+
+//方式二
+function getRemTwo() {
+  console.log("rem");
+//   alert("dddddd")
+debugger;
+  var html = document.getElementsByTagName("html")[0];
+  // 网页可见区域宽
+  var clientWidth =
+    document.body.clientWidth || document.documentElement.clientWidth;
+  html.style.fontSize = (clientWidth / oWidth) * prem + "px";
+}

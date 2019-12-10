@@ -75,7 +75,7 @@ export default {
 <style lang="scss">
 .index-page{
   .index-page-fotter{
-    margin-top:70px;
+    margin-top:pxTorem(70px);
   }
 
 }

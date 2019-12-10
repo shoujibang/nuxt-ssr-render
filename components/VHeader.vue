@@ -190,35 +190,37 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+@import "@/assets/stylus/_reset.scss";
     .header-box{
        display:flex;
        width: 100%;
-       padding: 18px  45px;
+       padding: pxTorem(18px) pxTorem(45px);
         position: relative;
-       border-bottom: 1px solid #808080;
+       border-bottom: pxTorem(1px) solid #808080;
        position: relative;
        z-index: 99;
+    //    background: red;
     }
    
     .header-box .logo{
         width: 100%;
-        font-size: 20px;
+        font-size: pxTorem(20px);
         display:flex;
         align-items: center;
-        margin-right: 864px;
+        margin-right: pxTorem(864px);
         .logo-box{
-            width: 29px;
-            height: 23px;
-            margin-right: 12px;
+            width: pxTorem(29px);
+            height: pxTorem(23px);
+            margin-right: pxTorem(12px);
         }
     }
     .header-box .nav-box{
-        font-size: 14px;
+        font-size: pxTorem(14px);
     }
     .header-box .nav-box-right{
-        font-size: 14px;
+        font-size: pxTorem(14px);
         position: absolute;
-        right: 45px;
+        right: pxTorem(45px);
         span{
             cursor: pointer;
         }
@@ -228,18 +230,18 @@ export default {
        align-items: center;
     }
     .header-box .nav-box ul .first-li{
-        width: 100px;
-        height: 36px;
+        width: pxTorem(100px);
+        height: pxTorem(36px);
         text-align: center;
-        font-size: 14px;
+        font-size: pxTorem(14px);
         white-space: nowrap;
-        margin-right: 39px;
+        margin-right: pxTorem(39px);
         position: relative;
-        padding-bottom: 6px;
+        padding-bottom: pxTorem(6px);
         cursor: pointer;
         
         &:hover{
-            border-bottom:3px solid rgba(0,161,235,1);
+            border-bottom:pxTorem(3px) solid rgba(0,161,235,1);
         }
         &:hover .sub-menu{
             // border: 1px solid red;
@@ -249,8 +251,8 @@ export default {
             width: 100%;
             position: fixed;
             // left: 21px;
-            padding: 8px; 
-            padding-top: 30px;  
+            padding: pxTorem(8px); 
+            padding-top: pxTorem(30px);  
             // border: 1px solid red;   
             display: none;
             li{
@@ -258,14 +260,14 @@ export default {
                 flex-direction: column;
                 flex-wrap: wrap;
                 position: relative;
-                padding-left: 20px;
-                margin-right: 20px;
+                padding-left: pxTorem(20px);
+                margin-right: pxTorem(20px);
                 position: relative;
                 align-items: flex-start;
                 cursor: pointer;
-                line-height: 35px;
+                line-height: pxTorem(35px);
                 .title-box{
-                    margin-bottom: 20px;                                        
+                    margin-bottom: pxTorem(20px);                                        
                     &:before{
                         width:4px;
                         height:12px;
@@ -274,7 +276,7 @@ export default {
                         content: '';
                         position: absolute;
                         left: 0;
-                        top: 5px;
+                        top: pxTorem(5px);
                     }
                     &:after{
                         width:100%;

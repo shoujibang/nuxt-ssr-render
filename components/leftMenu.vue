@@ -101,7 +101,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-
+@import "@/assets/stylus/_reset.scss";
   .left-menu{
     width: 100%;
     height: 100%;

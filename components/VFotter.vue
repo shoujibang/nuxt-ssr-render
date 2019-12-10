@@ -92,6 +92,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+@import "@/assets/stylus/_reset.scss";
     .fotter-box{
        display:flex;
        align-items: center;
@@ -104,17 +105,17 @@ export default {
         position: absolute;
         .fotter-box-top{
             color: #c3c3c3;
-            font-size: 30px;
+            font-size: pxTorem(30px);
         }
         .fotter-box-bottom{
             width: 100%;
-            height: 46px;
+            height: pxTorem(46px);
             background: #1f252f;
             color: #c3c3c3;
-            font-size: 14px;
+            font-size: pxTorem(14px);
             letter-spacing: .01rem;
             text-align: center;
-            line-height: 46px;
+            line-height: pxTorem(46px);
         }
     }
    

@@ -99,11 +99,11 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-// @import "@/assets/style/index.scss";
+  @import "@/assets/stylus/_reset.scss";
   .column-three{
-    width:1200px;
+    width:pxTorem(1200px);
     margin:0 auto;
-    font-size:16px;
+    font-size:pxTorem(16px);
     color: #7D818A;
     
 
@@ -117,18 +117,18 @@ export default {
     justify-content: space-between;
   }
   .column-three ul li{
-    width: 360px;
+    width: pxTorem(360px);
     box-sizing: border-box; 
     
-    margin-right: 60px;
+    margin-right: pxTorem(60px);
        
-    border:1px solid rgba(238,238,238,1);
+    border:pxTorem(1px) solid rgba(238,238,238,1);
     border-bottom: none;
     position: relative;
     overflow: hidden;
   }
   .column-three ul li:last-child{
-    margin-right:-0.001px;
+    margin-right:pxTorem(-0.001px);
   }
   .column-three ul li .discover{
     position: absolute;
@@ -136,37 +136,37 @@ export default {
     left: 0;
     right: 0;
     height: 100%;
-    padding:30px;
+    padding:pxTorem(30px);
     background: rgba(0, 111, 240, 0.96);
     transition: top 0.5s ease-in-out;
     display: flex;
     justify-content: center;
     color: #fff;
-    font-size: 20px;
+    font-size: pxTorem(20px);
   }
   .column-three ul li:hover{
-    box-shadow:0px 3px 19px 0px rgba(219,219,219,0.5);
+    box-shadow:pxTorem(0px) pxTorem(3px) pxTorem(19px) pxTorem(0px) rgba(219,219,219,0.5);
   }
   .column-three ul li .main-box{ 
      box-sizing: border-box; 
-    padding:36px 29px 79px 36px;
+    padding:pxTorem(36px) pxTorem(29px) pxTorem(79px) pxTorem(36px);
 
-    border-bottom:1px solid rgba(238,238,238,1);
+    border-bottom:pxTorem(1px) solid rgba(238,238,238,1);
   }
   .column-three ul li .main-box .desc{
-    line-height: 30px;
-    font-size: 14px;
+    line-height: pxTorem(30px);
+    font-size: pxTorem(14px);
     color: #808080;
   }
   .column-three ul li .tit{
-    font-size:20px;
+    font-size:pxTorem(20px);
     font-weight:500;
     color:rgba(51,51,51,1);
-    margin-bottom: 11px;
+    margin-bottom: pxTorem(11px);
     
   }
   .column-three ul li .img-box{
-    height: 241px;
+    height: pxTorem(242px);
     overflow: hidden;
   }
    .column-three ul li .img-box img{
@@ -185,26 +185,26 @@ export default {
     justify-content: space-between;
    }
    .column-three .col-two li .main-box .desc{
-    line-height: 24px;
-    font-size: 14px;
+    line-height: pxTorem(24px);
+    font-size: pxTorem(14px);
     color: #808080;
   }
    .column-three .col-two li{
-     width:560px;
-     margin-right:36px;
+     width:pxTorem(560px);
+     margin-right:pxTorem(36px);
      display: flex;
-     margin-bottom:20px;
+     margin-bottom:pxTorem(20px);
    }
    .column-three .col-two li:nth-child(2n) {
-     margin-right:-0.001px;
+     margin-right:pxTorem(-0.001px);
    }
    .column-three .col-two li .img-box{
-     width:274px;
-     height:232px
+     width:pxTorem(274px);
+     height:pxTorem(232px)
    }
    .column-three .col-two li .main-box{
-     width:286px;
-     height:232px
+     width:pxTorem(286px);
+     height:pxTorem(232px)
    }
    /**
     三列布局样式--图和标题
@@ -216,8 +216,8 @@ export default {
     justify-content: space-between;
    }
    .column-three .pic-tit li .main-box .desc{
-    line-height: 24px;
-    font-size: 14px;
+    line-height: pxTorem(24px);
+    font-size: pxTorem(14px);
     color: #808080;
   }
    .column-three .pic-tit li{
@@ -226,27 +226,27 @@ export default {
      display: flex;
      align-items: center;
     justify-content: center;
-     margin-bottom:20px;
-     border-bottom:1px solid rgba(238,238,238,1);
+     margin-bottom:pxTorem(20px);
+     border-bottom:pxTorem(1px) solid rgba(238,238,238,1);
    }
    .column-three .pic-tit li .tit{
-     margin-top:10px;
+     margin-top:pxTorem(10px);
    }
    .column-three .pic-tit li:hover{
-     border:1px solid #fff;
+     border:pxTorem(1px) solid #fff;
    }
    .column-three .pic-tit li:last-child {
-     margin-right:-0.001px;
+     margin-right:pxTorem(-0.001px);
    }
    .column-three .pic-tit li .img-box{
-     width:49px;
-     height:49px;
-     margin-right:48px;
+     width:pxTorem(49px);
+     height:pxTorem(49px);
+     margin-right:pxTorem(48px);
    }
    .column-three .pic-tit li .main-box{
-     padding: 43px 0 46px 0;
+     padding: pxTorem(43px) 0 pxTorem(46px) 0;
      border:none;
-     width: 130px;
+     width: pxTorem(130px);
    }
 .column-three .pic-tit li .img-box img:hover{
     transform: none;
@@ -262,21 +262,21 @@ export default {
     
    }
    .column-three .pic-tits li .main-box .desc{
-    line-height: 24px;
-    font-size: 14px;
+    line-height: pxTorem(24px);
+    font-size: pxTorem(14px);
     color: #FFFFFF;
   }
    .column-three .pic-tits li{
-     width:364px;
+     width:pxTorem(364px);
      margin-right:0;
      display: flex;
      align-items: center;
     justify-content: center;
-     margin-bottom:20px;
+     margin-bottom:pxTorem(20px);
      border:none;
    }
    .column-three .pic-tits li .tit{
-     margin-top:10px;
+     margin-top:pxTorem(10px);
      color: #FFFFFF;
    }
    .column-three .pic-tits li:hover{
@@ -284,17 +284,17 @@ export default {
      box-shadow: none;
    }
    .column-three .pic-tits li:last-child {
-     margin-right:-0.001px;
+     margin-right:pxTorem(-0.001px);
    }
    .column-three .pic-tits li .img-box{
-     width:49px;
-     height:49px;
-     margin-right:48px;
+     width:pxTorem(49px);
+     height:pxTorem(49px);
+     margin-right:pxTorem(48px);
    }
    .column-three .pic-tits li .main-box{
-     padding: 43px 0 46px 0;
+     padding: pxTorem(43px) 0 pxTorem(46px) 0;
      border:none;
-     width: 130px;
+     width: pxTorem(130px);
    }
 .column-three .pic-tits li .img-box img:hover{
     transform: none;
