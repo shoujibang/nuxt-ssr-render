@@ -28,7 +28,8 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/logo.png' }
-    ]
+    ],
+    // script:[{src:'~/assets/util/rem'}]
   },
   /*
   ** Customize the progress-bar color
@@ -76,6 +77,7 @@ module.exports = {
    '~/plugins/jquery', 
    { src: '~/plugins/util.js', ssr: false },//扩展全局方法
    '@/plugins/main',//扩展全局组件components
+   { src: '~/assets/util/rem', ssr: false }, //px转rem方法
   //  { src: '~/plugins/rem.js', ssr: false }, //px转rem方法
   ],
   /*
