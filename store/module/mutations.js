@@ -10,3 +10,9 @@ export function Remove(state){
     }
     state.counter--;
 }
+export function isLoginStatus(state){
+    state.authenticated = true;
+}
+export function noLoginStatus(state){
+    state.authenticated = false;
+}

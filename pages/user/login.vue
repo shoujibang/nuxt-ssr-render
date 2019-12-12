@@ -43,6 +43,7 @@
 </template>
 
 <script>
+import {mapState, mapMutations} from 'vuex'; //引入vuex
 export default {
   head () {
     return {
@@ -72,9 +73,18 @@ export default {
   mounted() {
     let hei = this.$(window).height();
     this.$("html").css("height",hei)
-    this.$("html").css("background",'rgba(244, 248, 255, 1)')
+    this.$("html").css("background",'rgba(244, 248, 255, 1)');
+    console.log(this.authenticated)
+  },
+  computed: {
+    ...mapState({
+      authenticated: state => state.authenticated
+    })
   },
   methods: {
+    ...mapMutations([
+      'isLoginStatus'
+    ]),
     submitForm(formName) {
       let that = this;
         this.$refs[formName].validate((valid) => {
@@ -89,8 +99,9 @@ export default {
                 this.$alert("您的用户名或密码错误")
                 return false;
               }
-              
+              this.isLoginStatus();
               this.$router.push('/admin');
+              
                  
             })
             // alert(this.loginForm.name);

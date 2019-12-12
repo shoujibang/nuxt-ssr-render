@@ -60,6 +60,7 @@ module.exports = {
   plugins: [
     '@/plugins/element-ui',
     "~/plugins/axios",//扩展axios
+    { src: '~/plugins/inject', mode: 'client' }, //同时在context，Vue实例，甚至Vuex中同时注入
     '~/assets/util/filter', //增加全局顾虑器filter
     /**
      * 集成jquery，同时注入context，Vue，Vuex

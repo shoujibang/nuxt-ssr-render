@@ -50,6 +50,7 @@
     </div> 
 </template>
 <script>
+import {mapState, mapMutations} from 'vuex'; //引入vuex
 export default {
     name:"VHeader",
     created() {
@@ -157,8 +158,13 @@ export default {
         
     },
     methods: {
+        ...mapMutations([
+            'noLoginStatus'
+        ]),
          exitFn(){
             this.$delCookie('username');
+            this.userName = "";
+            this.noLoginStatus()
             this.$router.push("/")
         },
         pushRoute(e,url){
