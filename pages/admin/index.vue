@@ -15,6 +15,7 @@
 export default {
   name:"Admin",
   layout: 'admin',
+  middleware:['auth'],
   data() {
     return {
       title:"产创云后台管理页面",

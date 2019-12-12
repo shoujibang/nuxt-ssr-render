@@ -269,14 +269,14 @@ export default {
                 .title-box{
                     margin-bottom: pxTorem(20px);                                        
                     &:before{
-                        width:4px;
-                        height:12px;
+                        width:pxTorem(4px);
+                        height:pxTorem(12px);
                         background:rgba(0,161,235,1);
                         display: block;                    
                         content: '';
                         position: absolute;
                         left: 0;
-                        top: pxTorem(5px);
+                        top: pxTorem(13px);
                     }
                     &:after{
                         width:100%;

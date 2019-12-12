@@ -111,7 +111,7 @@ export default {
 }
 
 .carousel-comp /deep/ .el-carousel__indicators {
-  bottom: pxTorem(230px) ;
+  bottom: pxTorem(150px) ;
   height:pxTorem(4px) ;
   z-index: 9999999999999;
 }

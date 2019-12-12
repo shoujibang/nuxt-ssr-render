@@ -111,7 +111,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+@import "@/assets/stylus/_reset.scss";
  .container-main{
   // position: relative;
   width: 100%;
@@ -122,17 +122,17 @@ export default {
   // align-items: center;
   overflow: hidden;
   .el-form-item__label i{
-    font-size: 18px;
+    font-size: pxTorem(18px);
     // width: 75px;
   }
   .login-wrap{
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 700px;
-    height: 560px;
+    width: pxTorem(700px);
+    height: pxTorem(560px);
     
-    border-radius: 13px;
+    border-radius: pxTorem(13px);
     background: #fff;
     overflow: hidden;
     transform: translate(-50%, -50%);
