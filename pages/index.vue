@@ -33,7 +33,8 @@ export default {
       dataList.push({
         img:item.image,
         title:item.title,
-        desc:item.title
+        desc:item.title,
+        path:item.path
       })
       
     });

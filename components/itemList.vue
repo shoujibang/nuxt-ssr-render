@@ -23,7 +23,7 @@ arg:typeLi
             <img :src="item.img" />
           </div>
           <div class="main-box">
-            <h2 class="tit">{{item.title}}</h2>
+            <h2 @click="urlRoute(item.path)" class="tit">{{item.title}}</h2>
             <p class="desc">{{item.desc}}</p>
           </div>
           <div ref="discover" class="discover">
@@ -61,6 +61,10 @@ export default {
     }
   },
   methods: {
+    urlRoute(url){
+      // debugger;
+      window.open(url);
+    },
     typeAuto(){
      
       console.log(this.typeLi)
@@ -201,6 +205,9 @@ export default {
    .column-three .col-two li .img-box{
      width:pxTorem(274px);
      height:pxTorem(232px)
+   }
+   .column-three .col-two li h2{
+     cursor: pointer;
    }
    .column-three .col-two li .main-box{
      width:pxTorem(286px);
