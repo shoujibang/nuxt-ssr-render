@@ -73,6 +73,7 @@ export default {
 }
 </script>
 <style lang="scss">
+@import "@/assets/stylus/_reset.scss";
 .index-page{
 
   width: 100%;

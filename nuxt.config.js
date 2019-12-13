@@ -1,5 +1,5 @@
 
-const Ii8N = require('./assets/lang/Ii8N.js');
+const Ii8N = require('./assets/lang/Ii8N.js'); //i18n国际化配置
 
 module.exports = {
   mode: 'universal',
@@ -50,7 +50,7 @@ module.exports = {
     //element-ui基于断点的隐藏类
     'element-ui/lib/theme-chalk/display.css',
     //集成font-awesome图标库 fa fa-thumbs-up
-    '@/assets/font-awesome-4.7.0/css/font-awesome.min.css'
+    '@/assets/font-awesome-4.7.0/css/font-awesome.min.css',
     
   ],
   /*

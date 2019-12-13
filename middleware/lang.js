@@ -6,12 +6,13 @@ import getCookie from '@/assets/util/get-cookie'
 
 
 export default function (ctx) {
+  console.log("111111111111111111111111111111");
     console.log(ctx);
     let {store, route, redirect, req} = ctx;
     const {lang} = getCookie(req) //在cookie拿到当前设置的语言
     //如果有改变vuex更新store中语言类型
     if (lang) {
-        store.commit('setLang', lang)
+        store.commit('setLang', lang);
       }
     //切换语言是更改路由通过vuerouter
     const routePath = route.path

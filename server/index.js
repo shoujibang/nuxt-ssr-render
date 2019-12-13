@@ -18,8 +18,12 @@ app.use(bodyParser.json());//boday中间件
 //   })
 // )
 const auth = require('./router/auth'); //引入权限路由
+const backServer = require('./backServer'); //引入权限路由
+// import backServer from './backServer'; //业务逻辑路由
 //将权限路由通过use添加到中间件
 app.use("/auth",auth);
+//业务逻辑路由
+app.use("/api",backServer);
 
 // Import and Set Nuxt.js options
 const config = require('../nuxt.config.js')

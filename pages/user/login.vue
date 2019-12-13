@@ -17,7 +17,7 @@
             <i slot="label" class="fa fa-key">密码:</i>
             <el-input type="password" v-model="loginForm.pass" autocomplete="off"></el-input>
           </el-form-item>
-          <el-form-item>
+          <el-form-item class="mart">
             <el-button type="primary" @click="submitForm('ruleForm')">提交</el-button>
             <el-button @click="resetForm('ruleForm')">重置</el-button>
           </el-form-item>
@@ -122,7 +122,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/stylus/_reset.scss";
+@import "@/assets/stylus/main.scss";
  .container-main{
   // position: relative;
   width: 100%;
@@ -136,6 +136,9 @@ export default {
     font-size: pxTorem(18px);
     // width: 75px;
   }
+  .mart{
+    margin:pxTorem(15px) 0 pxTorem(15px) 0 ;
+  }
   .login-wrap{
     position: absolute;
     left: 50%;
@@ -143,7 +146,7 @@ export default {
     width: pxTorem(700px);
     height: pxTorem(560px);
     
-    border-radius: pxTorem(13px);
+    border-radius: 13px;
     background: #fff;
     overflow: hidden;
     transform: translate(-50%, -50%);

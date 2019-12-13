@@ -38,8 +38,8 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
-
-body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td, iframe {
+// body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td, iframe
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, input, textarea, th, td, iframe {
   margin: 0;
   padding: 0;
 }
@@ -78,8 +78,8 @@ a {
 a, label, button, input, select {
   -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 }
-
-input, select, button {
+// input, select, button
+input, select {
   font:100% tahoma, "\5b8b\4f53", arial;
   vertical-align: baseline;
   border-radius: 0;
