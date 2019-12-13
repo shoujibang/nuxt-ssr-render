@@ -1,4 +1,6 @@
 
+const Ii8N = require('./assets/lang/Ii8N.js');
+
 module.exports = {
   mode: 'universal',
   /**
@@ -93,6 +95,8 @@ module.exports = {
       常用模块列表：https://github.com/topics/nuxt-module
   */
   modules: [
+    //i18n国际化
+    'nuxt-i18n',
     /**
      * 实现接口代理
      */
@@ -100,6 +104,8 @@ module.exports = {
     // 请求代理配置，解决跨域
     // '@nuxtjs/proxy'
   ],
+  // I18国际化配置项
+  i18n:Ii8N,
   //配置代理
   axios: {
     // baseUrl:"",//设置统一的基础url，线上环境关闭代理使用他

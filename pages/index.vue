@@ -6,13 +6,14 @@
         
       </go-to>       -->
       
-      <div style="text-align:center;">
+      <!-- <div style="text-align:center;">
         {{counter}}
         <el-button @click="add">增加</el-button>
         <el-button @click="remove">减少</el-button>
-      </div>
+      </div> -->
+      
       <item-list   :typeLi="2" :data="itemList"></item-list>
-
+      
     
       
     

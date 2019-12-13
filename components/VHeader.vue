@@ -37,13 +37,14 @@
             
         </el-row>
         <div class="nav-box-right">
-            <div v-if="userName.length > 0">
+            <div class="dom" v-if="userName.length > 0">
                 {{userName}}
-                <span @click="exitFn">退出</span>
+                <span @click="exitFn">{{ $t('home.exit') }}</span>
             </div>
-            <div v-else>
-                <n-link to="/user/login">登录</n-link>
-                <n-link to="/user/regiset">注册</n-link>
+            <div class="dom" v-else>
+                <n-link to="/user/login">{{ $t('home.login') }}</n-link>
+                <n-link to="/user/regiset">{{ $t('home.regist') }}</n-link>
+                <lang-switcher />
             </div>
         </div>
         <slot></slot>
@@ -227,6 +228,13 @@ export default {
         font-size: pxTorem(14px);
         position: absolute;
         right: pxTorem(45px);
+        .dom{
+            display: flex;
+            // margin-right: pxTorem(10px);
+            a{
+                margin-right: pxTorem(10px);
+            }
+        }
         span{
             cursor: pointer;
         }

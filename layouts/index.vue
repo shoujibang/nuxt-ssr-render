@@ -1,5 +1,6 @@
 <template>
   <div class="index-page">
+    <go-to />
     <v-header>
         <carousel :cdataSub="cdataSub" isFixed :carouselHei="560" :data="cdata" />    
     </v-header>

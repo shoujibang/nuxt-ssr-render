@@ -7,6 +7,7 @@ import VHeader from '@/components/VHeader' //VHeader
 import VFotter from '@/components/VFotter' //VFotter
 import goTo from '@/components/goTo' //goTo
 import VHeaderAdmin from '@/components/VHeaderAdmin' //goTo
+import LangSwitcher from '@/components/langSwitcher' //goTo
 
 
 
@@ -15,6 +16,7 @@ Vue.component(VHeader.name,VHeader);
 Vue.component(VFotter.name,VFotter);
 Vue.component(goTo.name,goTo);
 Vue.component(VHeaderAdmin.name,VHeaderAdmin);
+Vue.component(LangSwitcher.name,LangSwitcher);
 
 // Vue.component(Logo.name,Logo);
 
