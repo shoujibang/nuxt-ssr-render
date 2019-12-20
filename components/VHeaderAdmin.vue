@@ -6,7 +6,7 @@
                     <div class="logo-box">
                         <img src="@/assets/image/logo.png" />
                     </div>
-                    <span>产创云区块链-控制台</span>
+                    <span>控制台</span>
                 </div>
             </el-col>
             <el-col :span="20" :xs="20" :sm="20" :md="20"  :xl="20">

@@ -60,60 +60,10 @@ export default {
   },
   data() {
     return {
-      cdataSub:[
-          {
-            title:"最新活动",
-            desc:"京东数科与京东云联袂发布智臻链“云”"
-          },
-          {
-            title:"最新动态",
-            desc:"京东数科获智博会区块链高峰论坛两大奖项 应用落地已成行业趋势"
-          },
-          {
-            title:"合作招商",
-            desc:"区块链全流程可追溯 京东联合中国检科院看清进口燕窝“前世今生”"
-          },
-          {
-            title:"文档专区",
-            desc:"京东区块链白皮书重磅发布"
-          }
-      ],
-      cdata:[{
-        img:require("@/assets/image/banner_1.png"),
-        title:"京东区块链底层引擎JD Chain1",
-        desc:"南京产业云",
-        btn:[{
-          name:"了解产品",
-          url:""
-        }],
-      },{
-        img:require("@/assets/image/banner_2.png"),
-        title:"京东区块链底层引擎JD Chain2",
-        desc:"南京产业云",
-        btn:[{
-          name:"了解产品",
-          url:""
-        }],
-      },{
-        img:require("@/assets/image/banner_3.png"),
-        title:"京东区块链底层引擎JD Chain3",
-        desc:"南京产业云",
-        btn:[{
-          name:"了解产品",
-          url:""
-        }],
-      },{
-        img:require("@/assets/image/banner_4.png"),
-        title:"京东区块链底层引擎JD Chain4",
-        desc:"南京产业云",
-        btn:[{
-          name:"了解产品",
-          url:""
-        }],
-      }],
+      
       itemList:[],
       sbustr:"哈喽哈喽哈喽哈喽哈喽哈喽哈喽哈喽哈喽哈喽哈喽哈喽哈喽哈喽",
-      title:"南京产创云",
+      title:"控制台管理页面",
       baseUrl:process.env.baseUrl //通过nuxt.config.js的env配置的全局变量
     }
   },

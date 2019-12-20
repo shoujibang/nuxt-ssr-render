@@ -21,49 +21,49 @@ export default {
       cdataSub:[
           {
             title:"最新活动",
-            desc:"京东数科与京东云联袂发布智臻链“云”"
+            desc:"发生的范德萨发生的发的说法萨达"
           },
           {
             title:"最新动态",
-            desc:"京东数科获智博会区块链高峰论坛两大奖项 应用落地已成行业趋势"
+            desc:"从V字形从V型从是徐表现出VB从v"
           },
           {
-            title:"合作招商",
-            desc:"区块链全流程可追溯 京东联合中国检科院看清进口燕窝“前世今生”"
+            title:"肥嘟嘟",
+            desc:"破了我没收到是的我科普日么么哒富马酸的看法第三方"
           },
           {
-            title:"文档专区",
-            desc:"京东区块链白皮书重磅发布"
+            title:"是的范德萨",
+            desc:"菲欧我入耳我宁可NoIE兼容打卡机酸辣粉时代峻峰东方今典"
           }
       ],
       cdata:[{
         img:require("@/assets/image/banner_1.png"),
-        title:"京东区块链底层引擎JD Chain1",
-        desc:"南京产业云",
+        title:"Chain1",
+        desc:"的是多少多所多",
         btn:[{
           name:"了解产品",
           url:""
         }],
       },{
         img:require("@/assets/image/banner_2.png"),
-        title:"京东区块链底层引擎JD Chain2",
-        desc:"南京产业云",
+        title:" Chain2",
+        desc:"VC大叔大婶大所大所多所多",
         btn:[{
           name:"了解产品",
           url:""
         }],
       },{
         img:require("@/assets/image/banner_3.png"),
-        title:"京东区块链底层引擎JD Chain3",
-        desc:"南京产业云",
+        title:" Chain3",
+        desc:"大法师打发多福多寿法撒旦飞洒地方撒打发斯",
         btn:[{
           name:"了解产品",
           url:""
         }],
       },{
         img:require("@/assets/image/banner_4.png"),
-        title:"京东区块链底层引擎JD Chain4",
-        desc:"南京产业云",
+        title:" Chain4",
+        desc:"V型小",
         btn:[{
           name:"了解产品",
           url:""

@@ -18,7 +18,7 @@ export default {
   middleware:['auth'],
   data() {
     return {
-      title:"产创云后台管理页面",
+      title:"控制台管理页面",
       datas:{
         xAxis: {
         type: 'category',
