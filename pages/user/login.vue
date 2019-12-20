@@ -54,7 +54,7 @@ export default {
   },
   data() {
     return {
-      title:"产创云登录页面",
+      title:"登录页面",
       loginForm:{
         name:"",
         pass:""

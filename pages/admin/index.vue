@@ -17,7 +17,7 @@ export default {
   layout: 'admin',
   data() {
     return {
-      title:"产创云后台管理页面",
+      title:"后台管理页面",
       datas:{
         xAxis: {
         type: 'category',
